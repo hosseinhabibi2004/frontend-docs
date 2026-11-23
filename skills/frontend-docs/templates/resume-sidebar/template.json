@@ -1,0 +1,20 @@
+{
+ "id": "resume-sidebar",
+ "name": "Résumé · Navy sidebar",
+ "description": "One-page CV with a full-height navy sidebar (name, grey contact chips, skills, education, languages, links) and a quiet main column with dot-marked experience entries.",
+ "mood": [
+  "calm",
+  "professional"
+ ],
+ "best_for": [
+  "resume",
+  "CV",
+  "engineer profile",
+  "portfolio sheet"
+ ],
+ "size": "A4",
+ "margin": "0",
+ "cover": "none",
+ "pagenumbers": false,
+ "style": "sans"
+}

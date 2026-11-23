@@ -1,0 +1,20 @@
+{
+ "id": "resume-classic",
+ "name": "Résumé · Classic ATS",
+ "description": "Dense single-column CV that parses cleanly in applicant-tracking systems: centred light/bold name, small-caps subtitle, ruled section headings, a label/skills table and two-line experience headers.",
+ "mood": [
+  "compact",
+  "technical"
+ ],
+ "best_for": [
+  "resume",
+  "CV",
+  "applicant tracking system",
+  "engineer CV"
+ ],
+ "size": "A4",
+ "margin": "11mm 12mm 11mm 12mm",
+ "cover": "none",
+ "pagenumbers": false,
+ "style": "sans"
+}

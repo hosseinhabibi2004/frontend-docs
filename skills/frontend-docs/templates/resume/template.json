@@ -1,0 +1,20 @@
+{
+ "id": "resume",
+ "name": "Résumé",
+ "description": "One-page CV with a tinted sidebar column and a clean main column; fixed single page, no overflow.",
+ "mood": [
+  "clean",
+  "personal"
+ ],
+ "best_for": [
+  "resume",
+  "CV",
+  "portfolio sheet",
+  "bio"
+ ],
+ "size": "A4",
+ "margin": "0",
+ "cover": "none",
+ "pagenumbers": false,
+ "style": "sans"
+}

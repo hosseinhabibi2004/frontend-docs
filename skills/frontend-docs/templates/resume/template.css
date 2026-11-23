@@ -1,0 +1,12 @@
+:root{ --accent:#0f766e; --tint:#eef6f5; --rule:#cfe3e0; --size:10.4pt; --lh:1.55; --h1:26pt; --h2:10pt; --h3:10pt;
+  --text-font:var(--font-ui),var(--lang-sans),sans-serif; --title-font:var(--font-title-latin),var(--lang-display),serif; }
+.doc>.page{ height:100vh; padding:0; display:block; }
+.page>.columns{ height:100%; gap:0; align-items:stretch; }
+.page>.columns>.col:first-child{ flex:0 0 66mm; background:var(--tint); padding:18mm 8mm; border-inline-end:1px solid var(--rule); }
+.page>.columns>.col:last-child{ padding:18mm 12mm 14mm; }
+.page h1{ font:700 26pt/1.1 var(--title-font); margin:0 0 .15em; color:var(--ink); }
+.page h1+p{ color:var(--accent); font:600 11pt var(--ui-font); margin-bottom:1.2em; }
+.page h2{ font:700 9pt var(--ui-font); letter-spacing:.14em; text-transform:uppercase; color:var(--accent); border-bottom:1px solid var(--rule); padding-bottom:.25em; margin:1.4em 0 .6em; }
+:lang(fa) .page h2,:lang(ar) .page h2{ letter-spacing:0; text-transform:none; font-size:10.5pt; }
+.page h3{ font:700 10pt var(--ui-font); margin:.9em 0 0; } .page h3+p{ color:var(--muted); font-size:8.8pt; margin-bottom:.3em; }
+.page ul{ padding-inline-start:1.1em; margin-bottom:.6em; }

@@ -1,0 +1,29 @@
+:root{ --ink:#1b1b1b; --muted:#555; --blue:#2a56c6; --rule:#1b1b1b; --accent:#2a56c6; --size:8.7pt; --lh:1.3;
+  --font-text-latin:'Carlito'; --font-title-latin:'Inter'; --font-ui:'Carlito'; }
+.doc{ text-align:left; } [dir=rtl] .doc{ text-align:right; }
+.doc>h1:first-child{ font-size:27pt; font-weight:300; text-align:center; margin:0; letter-spacing:-.01em; line-height:1.15; }
+.doc>h1:first-child strong{ font-weight:700; }
+.doc>h1:first-child+p{ text-align:center; color:var(--blue); font-size:9.4pt; margin:1mm 0 2mm; text-transform:uppercase; letter-spacing:.06em; font-size:8.6pt; }
+.doc>h1:first-child+p+p{ text-align:center; font-size:8.9pt; margin:0 0 3mm; line-height:1.45; }
+.doc>h1:first-child+p+p a{ color:inherit; }
+.doc p{ text-align:justify; margin:0 0 2mm; } 
+h2{ font-family:var(--title-font); font-size:14pt; font-weight:600; letter-spacing:-.01em; margin:3.6mm 0 1.8mm; padding-bottom:.4mm; border-bottom:.9pt solid var(--rule); line-height:1.2; }
+table{ font-family:var(--text-font); font-size:var(--size); margin:0; table-layout:fixed; }
+thead{ display:none; } th,td{ border:0; padding:.6mm 0; line-height:1.3; vertical-align:top; }
+td:first-child{ width:27mm; font-weight:700; text-align:end; padding-inline-end:4mm; white-space:nowrap; }
+td:last-child{ text-align:start; }
+h3,h4{ display:flex; justify-content:space-between; align-items:baseline; gap:4mm; margin:0; line-height:1.3; letter-spacing:0; }
+h3{ font-family:var(--text-font); font-size:10pt; font-weight:700; margin-top:2.4mm; }
+h3 .r{ font-style:italic; font-weight:400; color:var(--blue); font-size:9pt; }
+h4{ font-family:var(--text-font); font-size:8.7pt; font-weight:400; font-style:normal; margin-bottom:.8mm; text-transform:uppercase; letter-spacing:.05em; }
+h4 .l{ font-size:8.2pt; } h4 .r{ font-style:italic; text-transform:none; letter-spacing:0; color:var(--muted); font-size:8.7pt; }
+ul{ margin:0; padding-inline-start:3.4mm; } li{ margin:0 0 .5mm; text-align:justify; line-height:1.28; } li::marker{ font-size:.9em; }
+strong{ font-weight:700; }
+
+/* Persian / Arabic: larger and ragged (justified Latin-in-RTL leaves holes), Latin skill lists stay left-to-right */
+:lang(fa) .doc,:lang(ar) .doc,:lang(he) .doc{ font-size:9.5pt; line-height:1.6; }
+:lang(fa) .doc p,:lang(fa) .doc li,:lang(ar) .doc p,:lang(ar) .doc li{ text-align:start !important; }
+:lang(fa) table,:lang(ar) table{ font-size:9.3pt; } :lang(fa) td,:lang(ar) td{ line-height:1.55; }
+:lang(fa) h3,:lang(ar) h3{ font-size:10.6pt; } :lang(fa) h4,:lang(ar) h4{ font-size:9.4pt; } :lang(fa) h2,:lang(ar) h2{ font-size:14.5pt; }
+:lang(fa) li,:lang(ar) li{ margin-bottom:1mm; }
+:lang(fa) td:last-child,:lang(ar) td:last-child{ text-align:right; }
