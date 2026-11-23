@@ -1,0 +1,119 @@
+/* frontend-docs base: structure shared by every template. Templates only set variables + accents. */
+:root{
+  /* roles: text (reading), title (headings), ui (captions, tables, labels), mono (code). Latin family first,
+     then the per-language family injected by the engine (--lang-*), then a generic fallback. */
+  --font-text-latin:'Source Serif 4';
+  --font-title-latin:'Fraunces','Source Serif 4';
+  --font-ui:'IBM Plex Sans';
+  --font-mono-names:'JetBrains Mono','IBM Plex Mono';
+  --font-mono:var(--font-mono-names),monospace;
+  --font-mono-ui:var(--font-mono-names),var(--lang-sans),monospace;  /* labels set in mono: falls back to the language font, not a system mono */
+  --lang-text:serif; --lang-title:serif; --lang-sans:sans-serif; --lang-display:serif; --lang-title-wt:700; --lh-lang:0;
+  --ink:#1b1b1f; --muted:#6b6b76; --rule:#d9d9de; --accent:#2b4a8b; --paper:#fff; --tint:#f5f5f7;
+  /* modular scale: sizes derive from --size and --ratio (1.2 minor third, 1.25 major third, 1.333 perfect fourth);
+     templates may override --h1/--h2/--h3 explicitly. */
+  --size:10.5pt; --ratio:1.25; --lh:1.6; --measure:none;
+  --small:calc(var(--size) / var(--ratio));
+  --h3:calc(var(--size) * var(--ratio));
+  --h2:calc(var(--size) * var(--ratio) * var(--ratio));
+  --h1:calc(var(--size) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio));
+  --numeric:lining-nums proportional-nums;   /* oldstyle-nums for book-like templates */
+  --text-font:var(--font-text-latin),var(--lang-text),serif;
+  --title-font:var(--font-title-latin),var(--lang-title),serif;
+  --ui-font:var(--font-ui),var(--lang-sans),sans-serif;
+}
+*{box-sizing:border-box}
+html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; font-synthesis-weight:none; font-synthesis-small-caps:none; }
+
+/* ── body text ─────────────────────────────────────────── */
+body{ margin:0; background:var(--paper); color:var(--ink); font-family:var(--text-font); font-size:var(--size);
+  line-height:max(var(--lh), var(--lh-lang));          /* Arabic/Indic/Thai marks need more leading than Latin */
+  font-kerning:normal; font-optical-sizing:auto; text-rendering:geometricPrecision;
+  font-variant-ligatures:common-ligatures contextual; font-variant-numeric:var(--numeric);
+  hyphens:manual; hyphenate-limit-chars:6 3 3; orphans:3; widows:3; overflow-wrap:break-word; }
+html[data-script=arabic] body, html[data-script=hebrew] body{ font-variant-ligatures:normal; }
+q{ quotes:inherit; }
+
+/* ── headings ──────────────────────────────────────────── */
+h1,h2,h3,h4{ font-family:var(--title-font); color:var(--ink); font-weight:700; break-after:avoid; margin:1.4em 0 .5em;
+  line-height:max(1.18, calc(var(--lh-lang) * .7)); letter-spacing:-.012em; font-variant-numeric:lining-nums proportional-nums; text-wrap:balance; }
+h1{ font-size:var(--h1);} h2{ font-size:var(--h2);} h3{ font-size:var(--h3); letter-spacing:-.005em;} h4{ font-size:1em; font-style:italic; letter-spacing:0; }
+.doc>h1:first-child{ margin-top:0; }
+p{ margin:0 0 .75em; text-wrap:pretty; }
+ul,ol{ margin:0 0 .8em; padding-inline-start:1.5em; } li{ margin:.15em 0; text-wrap:pretty; }
+a{ color:var(--accent); text-decoration:none; }
+blockquote{ margin:1em 0; padding:.2em 1em; border-inline-start:3px solid var(--accent); color:var(--muted); text-wrap:pretty; }
+hr{ border:0; border-top:1px solid var(--rule); margin:1.5em 0; }
+img,svg,figure{ max-width:100%; } figure{ margin:1em 0; break-inside:avoid; } figcaption{ font-family:var(--ui-font); font-size:var(--small); color:var(--muted); margin-top:.4em; text-wrap:balance; }
+img{ height:auto; }
+.cover-title,.cover-subtitle{ text-wrap:balance; }
+
+/* tables */
+table{ border-collapse:collapse; width:100%; margin:1em 0; font-family:var(--ui-font); font-size:calc(var(--size) * .92); line-height:max(1.4, calc(var(--lh-lang) * .78)); font-variant-numeric:lining-nums tabular-nums; break-inside:auto; }
+thead{ display:table-header-group; } tr{ break-inside:avoid; }
+th,td{ padding:.45em .7em; border-bottom:1px solid var(--rule); text-align:start; vertical-align:top; }
+th{ font-weight:600; border-bottom:1.5px solid var(--ink); }
+
+/* code: always LTR, mono, never overflowing */
+code,pre,kbd,samp{ font-family:var(--font-mono); direction:ltr; unicode-bidi:isolate; }
+code.inline{ font-size:.88em; background:var(--tint); padding:.05em .3em; border-radius:3px; }
+pre.code{ margin:1em 0; padding:.8em 1em; background:var(--tint); border:1px solid var(--rule); border-radius:4px;
+  font-size:8.6pt; line-height:1.5; white-space:pre-wrap; overflow-wrap:anywhere; tab-size:2; text-align:left; break-inside:auto; }
+pre.code code{ font-size:inherit; background:none; padding:0; }
+.hljs-comment,.hljs-quote{ color:#7a7f8a; font-style:italic; }
+.hljs-keyword,.hljs-selector-tag,.hljs-literal,.hljs-built_in{ color:var(--accent); font-weight:600; }
+.hljs-string,.hljs-regexp,.hljs-addition{ color:#1d7a46; }
+.hljs-number,.hljs-symbol,.hljs-bullet{ color:#b0541a; }
+.hljs-title,.hljs-section,.hljs-function .hljs-title{ color:#7a3e9d; }
+.hljs-attr,.hljs-attribute,.hljs-variable,.hljs-type,.hljs-params{ color:#0b6a8a; }
+.hljs-deletion{ color:#b3261e; }
+
+/* math */
+.math{ unicode-bidi:isolate; direction:ltr; }
+.math-display{ margin:1em 0; text-align:center; overflow:hidden; break-inside:avoid; }
+.math-display .katex-display{ margin:0; }
+.katex{ font-size:1.06em; }
+.math-error{ color:#b3261e; font-family:var(--font-mono); }
+
+/* callouts */
+.callout{ margin:1em 0; padding:.7em 1em .8em; border-inline-start:3px solid var(--accent); background:var(--tint); break-inside:avoid; border-radius:2px; }
+.callout-title{ font:600 8.5pt/1.2 var(--ui-font); letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:.35em; }
+[dir=rtl] .callout-title, :lang(fa) .callout-title, :lang(ar) .callout-title{ letter-spacing:0; text-transform:none; font-size:9.5pt; }
+.callout-body>:last-child{ margin-bottom:0; }
+.callout-warning{ --accent:#a45a00; } .callout-danger{ --accent:#a8261d; } .callout-tip{ --accent:#1d7a46; }
+.callout-theorem,.callout-lemma,.callout-definition{ background:transparent; border:1px solid var(--rule); border-inline-start:3px solid var(--accent); }
+.callout-theorem .callout-body,.callout-lemma .callout-body{ font-style:italic; }
+.callout-proof{ background:transparent; border-inline-start:1px solid var(--rule); }
+.callout-proof .callout-body::after{ content:''; float:inline-end; width:.55em; height:.55em; border:1px solid var(--muted); }
+
+/* layout helpers */
+.columns{ display:flex; gap:8mm; } .columns .col{ flex:1; min-width:0; }
+.avoid-break{ break-inside:avoid; }
+.pagebreak{ break-after:page; }
+.doc h1{ break-before:auto; }
+.footnotes{ font-size:9pt; border-top:1px solid var(--rule); margin-top:2em; } .footnotes-sep{ display:none; }
+.footnote-ref{ font-size:.75em; vertical-align:super; line-height:0; }
+.footnote-backref{ display:none; }
+sup,sub{ line-height:0; }
+
+/* fixed pages (section.page): exact size of the printed page, content must fit */
+.page{ break-before:page; break-after:page; overflow:hidden; }
+.doc>.page:first-child{ break-before:avoid; }
+.cover{ page:cover; width:100%; min-height:100vh; }
+
+/* table of contents */
+.toc{ break-after:page; }
+.toc-title{ font:700 var(--h1)/1.2 var(--title-font); margin:0 0 .8em; }
+.toc ol{ list-style:none; margin:0; padding:0; }
+.toc li{ margin:0; }
+.toc a{ display:flex; align-items:baseline; gap:.5em; color:var(--ink); padding:.28em 0; }
+.toc .lvl1{ font-weight:700; margin-top:.7em; }
+.toc .lvl2{ padding-inline-start:1.2em; } .toc .lvl3{ padding-inline-start:2.4em; font-size:.92em; color:var(--muted); }
+.toc .dots{ flex:1; border-bottom:1px dotted var(--muted); transform:translateY(-.25em); min-width:1em; }
+.toc .pg{ font-family:var(--ui-font); font-variant-numeric:tabular-nums; }
+.doc>.page:last-child{ break-after:avoid; }
+.doc>:last-child{ margin-bottom:0; }
+
+/* LTR material inside RTL text: isolated, never broken across lines (a formula split mid-expression reads scrambled in RTL) */
+.ltr{ unicode-bidi:isolate; direction:ltr; }
+.math, .math .katex, .math .katex-html{ white-space:nowrap !important; }
