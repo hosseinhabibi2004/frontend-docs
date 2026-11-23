@@ -1,0 +1,20 @@
+{
+ "id": "thesis",
+ "name": "Thesis",
+ "description": "Formal dissertation layout: centered title page, 1.65 line spacing, chapter openers on new pages, restrained serif.",
+ "mood": [
+  "formal",
+  "scholarly"
+ ],
+ "best_for": [
+  "thesis",
+  "dissertation",
+  "research report",
+  "academic submission"
+ ],
+ "size": "A4",
+ "margin": "28mm 25mm 28mm 30mm",
+ "cover": "plain",
+ "pagenumbers": true,
+ "style": "serif"
+}

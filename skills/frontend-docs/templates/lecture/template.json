@@ -1,0 +1,25 @@
+{
+ "id": "lecture",
+ "name": "Lecture Notes",
+ "description": "Friendly study notes: sans body, bold numbered sections, strong definition/example/exercise boxes.",
+ "mood": [
+  "friendly",
+  "clear"
+ ],
+ "best_for": [
+  "lecture notes",
+  "course handout",
+  "study guide",
+  "tutorial"
+ ],
+ "size": "A4",
+ "margin": "20mm 18mm 22mm 18mm",
+ "cover": "plain",
+ "pagenumbers": true,
+ "style": "sans",
+ "langFonts": {
+  "fa": {
+   "text": "Shabnam"
+  }
+ }
+}

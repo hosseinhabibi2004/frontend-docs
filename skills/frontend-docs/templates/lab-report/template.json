@@ -1,0 +1,20 @@
+{
+ "id": "lab-report",
+ "name": "Lab Report",
+ "description": "Scientific lab report: a millimetre ruler runs down every page edge, equations carry (n) numbers, tables are booktabs-style with units.",
+ "mood": [
+  "empirical",
+  "precise"
+ ],
+ "best_for": [
+  "lab report",
+  "experiment write-up",
+  "data report",
+  "technical note"
+ ],
+ "size": "A4",
+ "margin": "22mm 20mm 24mm 20mm",
+ "cover": "inline",
+ "pagenumbers": true,
+ "style": "serif"
+}

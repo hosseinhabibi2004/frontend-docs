@@ -1,0 +1,57 @@
+:root{ --ink:#1e1f3a; --muted:#6b6b80; --orange:#d4603a; --teal:#3f9aa3; --yellow:#edb33f; --rule:#dcdce6; --tint:#f4f5f8; --accent:#d4603a;
+  --size:11pt; --lh:1.85; --head-color:var(--orange); --pn-color:var(--orange); --ratio:1.25;
+  --font-text-latin:'IBM Plex Sans'; --font-title-latin:'IBM Plex Sans'; --font-ui:'IBM Plex Sans'; }
+.doc{ counter-reset:ch -1; }
+/* cover */
+.cover{ height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 25mm; }
+.cover-kicker{ font-size:14pt; color:var(--muted); margin-bottom:12mm; }
+.cover-title{ font-size:34pt; font-weight:800; color:var(--ink); line-height:1.3; margin:0 0 10mm; }
+.cover-subtitle{ font-size:13pt; color:var(--muted); margin:0 0 9mm; }
+.cover::after{ content:''; order:3; width:42mm; border-top:.8pt solid var(--ink); margin:0 0 14mm; }
+.cover-meta{ order:4; display:flex; flex-direction:column; gap:6mm; font-size:12pt; color:var(--ink); }
+.cover-meta span:first-child{ font-size:15pt; font-weight:700; }
+.cover-by{ order:5; margin-top:16mm; font-size:13pt; font-weight:700; color:var(--ink); } .cover-note{ order:6; margin-top:8mm; font-size:12pt; color:var(--muted); }
+/* contents */
+.toc{ break-after:page; }
+.toc-title{ position:relative; font-size:22pt; font-weight:800; color:var(--teal); margin:12mm 0 8mm; padding-inline-start:9mm; line-height:1.3; }
+.toc-title::before{ content:''; position:absolute; inset-inline-start:0; top:50%; width:4.2mm; height:4.2mm; margin-top:-2.1mm; border-radius:50%; background:var(--yellow); }
+.toc ol{ counter-reset:tc -1; }
+.toc a{ padding:.9mm 0; color:var(--ink); } .toc .dots{ border-bottom:0; }
+.toc .lvl1{ counter-increment:tc; counter-reset:ts; font-weight:700; margin-top:5mm; font-size:11.5pt; }
+.toc .lvl1 .t::before{ content:var(--l-chapter) ' ' counter(tc, doc) '  '; }
+.toc .lvl2{ counter-increment:ts; padding-inline-start:0; font-size:11pt; }
+.toc .lvl2 .t{ display:inline-flex; gap:6mm; } .toc .lvl2 .t::before{ content:counter(tc, doc) '.' counter(ts, doc); min-width:14mm; padding-inline-start:9mm; color:var(--ink); font-variant-numeric:tabular-nums; }
+.toc .pg{ color:var(--muted); font-size:9.5pt; }
+/* chapter card */
+.doc>h1{ counter-increment:ch; counter-reset:sec item fig; break-before:page; display:grid; grid-template-columns:auto 1fr; column-gap:7mm; align-items:center; background:var(--orange); color:#fff;
+  border-radius:6mm; padding:9mm 9mm 9mm 9mm; margin:0 0 8mm; font-size:var(--h1); font-weight:800; line-height:1.35; letter-spacing:0; }
+.doc>h1:first-child{ break-before:auto; }
+.doc>h1::before{ content:counter(ch, doc); grid-column:1; grid-row:1 / span 2; display:flex; align-items:center; justify-content:center; width:22mm; height:22mm; border-radius:50%; background:#fff; color:var(--orange); font-size:22pt; font-weight:800; line-height:1; }
+.doc>h1::after{ content:var(--doc-title); grid-column:2; grid-row:1; font-size:9.5pt; font-weight:400; opacity:.9; order:-1; }
+.doc>h1+p{ font-size:calc(var(--size) * 1.1); color:var(--muted); margin-bottom:6mm; }
+h2{ counter-increment:sec; font-size:13.5pt; font-weight:800; color:var(--ink); margin:8mm 0 3mm; }
+h2::before{ content:counter(ch, doc) '.' counter(sec, doc); margin-inline-end:4mm; }
+h3{ font-size:12pt; font-weight:700; color:var(--ink); }
+/* boxes */
+.callout{ border-radius:0; background:none; border:0; padding:0; margin:5mm 0; display:flow-root; }
+.callout-title{ letter-spacing:0; text-transform:none; font-size:inherit; }
+.callout-definition,.callout-theorem,.callout-lemma,.callout-proposition,.callout-corollary,.callout-example,.callout-remark{ position:relative; counter-increment:item; border:1.6pt solid var(--teal); border-radius:5mm; padding:12mm 6mm 2.5mm; margin:6mm 0; }
+.callout-definition .callout-title,.callout-theorem .callout-title,.callout-lemma .callout-title,.callout-proposition .callout-title,.callout-corollary .callout-title,.callout-example .callout-title,.callout-remark .callout-title{ position:absolute; top:-1.6pt; inset-inline-start:7mm; background:var(--teal); color:#fff; font-weight:700; font-size:10pt; padding:2mm 6mm 2.2mm; border-radius:1.2mm 1.2mm 4.2mm 4.2mm; line-height:1.35; box-shadow:0 .6mm 1.4mm rgba(30,31,58,.18); }
+.callout-definition .callout-title::after,.callout-theorem .callout-title::after,.callout-lemma .callout-title::after,.callout-proposition .callout-title::after,.callout-corollary .callout-title::after,.callout-example .callout-title::after,.callout-remark .callout-title::after{ content:' ' counter(ch, doc) '.' counter(item, doc); }
+.callout-theorem,.callout-lemma,.callout-corollary{ border-color:var(--orange); } .callout-theorem .callout-title,.callout-lemma .callout-title,.callout-corollary .callout-title{ background:var(--orange); }
+.callout-example{ border-color:var(--yellow); } .callout-example .callout-title{ background:var(--yellow); color:var(--ink); }
+.callout-theorem .callout-body,.callout-lemma .callout-body,.callout-proposition .callout-body,.callout-corollary .callout-body{ font-style:normal; }
+.callout-simple{ border-inline-start:3pt solid var(--orange); padding:1mm 5mm; margin:6mm 0; color:var(--ink); }
+.callout-simple .callout-title,.callout-simple .callout-body,.callout-simple .callout-body>p:first-child{ display:inline; }
+.callout-simple .callout-title{ color:var(--orange); font-weight:800; margin-inline-end:1.4mm; } .callout-simple .callout-title::after{ content:'.'; }
+.callout-correction{ border-inline-start:1.2pt dotted var(--muted); padding:1mm 5mm; margin:6mm 0; font-size:9.6pt; line-height:1.9; color:var(--muted); }
+.callout-correction .callout-title,.callout-correction .callout-body,.callout-correction .callout-body>p:first-child{ display:inline; }
+.callout-correction .callout-title{ color:var(--ink); font-weight:700; margin-inline-end:1.2mm; } .callout-correction .callout-title::after{ content:'.'; }
+.callout-proof{ border-inline-start:1pt solid var(--rule); padding:0 5mm; }
+.callout .math-display{ margin:3mm 0; }
+/* lists, figures */
+main ol{ list-style:none; padding:0; counter-reset:li; } main ol>li{ counter-increment:li; position:relative; padding-inline-start:9mm; margin:1.6mm 0; }
+main ol>li::before{ content:counter(li, doc) ')'; position:absolute; inset-inline-start:0; font-weight:700; color:var(--ink); }
+figure{ counter-increment:fig; margin:7mm 0 5mm; text-align:center; } figure img,figure svg{ max-width:100%; max-height:62mm; }
+figcaption{ font-size:9.6pt; color:var(--muted); text-align:start; margin-top:3mm; line-height:1.8; }
+figcaption::before{ content:var(--l-figure) ' ' counter(ch, doc) '.' counter(fig, doc) '. '; }

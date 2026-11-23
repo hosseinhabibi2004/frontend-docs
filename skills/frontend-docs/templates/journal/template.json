@@ -1,0 +1,20 @@
+{
+ "id": "journal",
+ "name": "Journal (2-column)",
+ "description": "Two-column journal article with a full-width title block, compact 9pt text and tight figures.",
+ "mood": [
+  "dense",
+  "academic"
+ ],
+ "best_for": [
+  "journal paper",
+  "conference paper",
+  "preprint",
+  "article"
+ ],
+ "size": "A4",
+ "margin": "18mm 16mm 20mm 16mm",
+ "cover": "inline",
+ "pagenumbers": true,
+ "style": "serif"
+}

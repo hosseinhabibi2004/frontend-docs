@@ -1,0 +1,13 @@
+:root{ --numeric:oldstyle-nums proportional-nums; --accent:#8a5a2b; --tint:#f8f3ea; --rule:#ddd2bd; --size:9.8pt; --lh:1.58; --h1:22pt; --h2:13pt; --h3:10.5pt; --h1:22pt; }
+.doc{ text-align:justify; hyphens:auto; }
+.cover{ height:100vh; padding:28mm 22mm; text-align:center; display:flex; flex-direction:column; justify-content:center; box-shadow:inset 0 0 0 8mm #fff, inset 0 0 0 8.5mm var(--accent), inset 0 0 0 10mm #fff, inset 0 0 0 10.4mm var(--accent); }
+.cover-kicker{ font:italic 400 11pt var(--font-text-latin),var(--lang-text); color:var(--accent); margin-bottom:8mm; }
+.cover-title{ font:400 30pt/1.12 var(--title-font); margin:0 0 6mm; }
+.cover-subtitle{ font:italic 12pt/1.4 var(--text-font); color:var(--muted); margin:0 0 20mm; }
+.cover-meta{ display:flex; flex-direction:column; gap:1mm; font:10pt var(--text-font); }
+.doc>h1{ font-family:var(--font-title-latin),var(--lang-display),serif; break-before:page; text-align:center; font-weight:400; margin:30mm 0 12mm; }
+.doc>h1:first-child{ break-before:auto; margin-top:0; }
+.doc>h1::before{ content:''; display:block; width:18mm; border-top:1.5pt solid var(--accent); margin:0 auto 6mm; }
+.doc>h1+p::first-letter{ float:inline-start; font:400 3.1em/.85 var(--title-font); padding:.05em .08em 0 0; color:var(--accent); }
+[dir=rtl] .doc>h1+p::first-letter{ float:none; font:inherit; padding:0; color:inherit; }
+h2{ font-style:italic; font-weight:400; } blockquote{ font-style:italic; border:0; text-align:center; color:var(--ink); }

@@ -1,0 +1,26 @@
+{
+ "id": "worksheet",
+ "name": "Worksheet",
+ "description": "Exercise sheet with a name/date strip, numbered questions and ruled answer areas.",
+ "mood": [
+  "practical",
+  "clean"
+ ],
+ "best_for": [
+  "worksheet",
+  "exam",
+  "quiz",
+  "homework"
+ ],
+ "size": "A4",
+ "margin": "16mm 16mm 18mm 16mm",
+ "cover": "none",
+ "pagenumbers": true,
+ "style": "sans",
+ "langFonts": {
+  "fa": {
+   "text": "Samim",
+   "title": "Samim"
+  }
+ }
+}

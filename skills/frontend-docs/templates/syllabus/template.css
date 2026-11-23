@@ -1,0 +1,19 @@
+:root{ --ink:#1f2229; --pencil:#7b818c; --hl:#ffe35c; --blue:#2f5fd0; --accent:#2f5fd0; --muted:#6a707b; --rule:#d7dae0; --tint:#f3f5f9; --size:10pt; --lh:1.58; --h1:20pt; --h2:12.5pt; --h3:10.5pt;
+  --text-font:'Literata',var(--font-text-latin),var(--lang-text),serif; --title-font:'Barlow Condensed',var(--lang-sans),sans-serif; --font-ui:'Barlow Condensed'; }
+.masthead{ display:grid; grid-template-columns:auto 1fr; column-gap:8mm; align-items:end; border-bottom:3pt solid var(--ink); padding-bottom:5mm; margin-bottom:7mm; }
+.cover-kicker{ grid-row:1 / span 3; font:700 62pt/.82 var(--title-font); letter-spacing:-.01em; color:var(--blue); margin:0; }
+.cover-title{ font:700 24pt/1.05 var(--title-font); text-transform:uppercase; letter-spacing:.01em; margin:0; }
+.cover-subtitle{ font:400 10.5pt var(--text-font); color:var(--muted); margin:1mm 0 0; }
+.cover-meta{ display:flex; gap:7mm; font:600 11pt var(--ui-font); color:var(--ink); margin-top:2.5mm; }
+:lang(fa) .cover-title,:lang(ar) .cover-title{ text-transform:none;  font-weight:var(--lang-title-wt); line-height:1.3; }
+:lang(fa) .cover-kicker,:lang(ar) .cover-kicker{ font-family:var(--title-font); }
+h2{ font:700 15pt var(--title-font); text-transform:uppercase; letter-spacing:.06em; display:flex; align-items:center; gap:.5em; margin-top:1.5em; }
+h2::before{ content:''; width:.55em; height:.55em; background:var(--ink); }
+:lang(fa) h2,:lang(ar) h2{ text-transform:none; letter-spacing:0;  font-size:12.5pt; }
+h3{ font:700 11.5pt var(--title-font); }
+table{ font:400 9.4pt/1.45 var(--text-font); border-top:2.5pt solid var(--ink); }
+th{ font:700 10pt var(--title-font); text-transform:uppercase; letter-spacing:.08em; color:var(--pencil); border-bottom:.8pt solid var(--ink); }
+:lang(fa) th,:lang(ar) th{ text-transform:none; letter-spacing:0;  font-size:9pt; }
+td:first-child{ font:700 14pt var(--title-font); color:var(--blue); width:16mm; white-space:nowrap; }
+mark{ background:linear-gradient(transparent 18%,var(--hl) 18% 92%,transparent 92%); color:inherit; padding:0 .2em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+.callout{ border:0; border-inline-start:3pt solid var(--blue); background:var(--tint); border-radius:0; } .callout-title{ color:var(--blue); }

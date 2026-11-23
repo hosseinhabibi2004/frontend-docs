@@ -1,0 +1,42 @@
+{
+ "id": "course-notes",
+ "name": "Course notes",
+ "description": "Lecture-notes book in the style of a university handout: minimal cover, teal contents page, orange chapter cards with a numbered disc, numbered definition boxes, run-in 'in plain words' callouts and auto-numbered figures. Built for RTL.",
+ "mood": [
+  "friendly",
+  "academic"
+ ],
+ "best_for": [
+  "course notes",
+  "lecture handout",
+  "study guide",
+  "math notes",
+  "textbook draft"
+ ],
+ "size": "A4",
+ "margin": "20mm 18mm 22mm 18mm",
+ "cover": "plain",
+ "pagenumbers": true,
+ "runninghead": true,
+ "style": "sans",
+ "langFonts": {
+  "fa": {
+   "text": "Vazirmatn",
+   "title": "Vazirmatn"
+  }
+ },
+ "gallery": [
+  [
+   "fa",
+   3
+  ],
+  [
+   "en",
+   3
+  ],
+  [
+   "fa",
+   1
+  ]
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "id": "textbook",
+ "name": "Textbook",
+ "description": "Book-style A5 pages: serif text, chapter openers with a drop cap, generous margins, running page numbers.",
+ "mood": [
+  "literary",
+  "traditional"
+ ],
+ "best_for": [
+  "textbook",
+  "book chapter",
+  "ebook to print",
+  "course reader"
+ ],
+ "size": "A5",
+ "margin": "18mm 15mm 20mm 15mm",
+ "cover": "plain",
+ "pagenumbers": true,
+ "style": "serif",
+ "langFonts": {
+  "fa": {
+   "text": "Parastoo"
+  }
+ },
+ "display": "elegant"
+}

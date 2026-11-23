@@ -1,0 +1,20 @@
+{
+ "id": "syllabus",
+ "name": "Syllabus",
+ "description": "Course syllabus: oversized condensed course code, a week-by-week grid with a thick top rule, and highlighter-pen marks for deadlines.",
+ "mood": [
+  "academic",
+  "practical"
+ ],
+ "best_for": [
+  "syllabus",
+  "course outline",
+  "lesson plan",
+  "training program"
+ ],
+ "size": "A4",
+ "margin": "18mm 18mm 20mm 18mm",
+ "cover": "inline",
+ "pagenumbers": true,
+ "style": "sans"
+}
