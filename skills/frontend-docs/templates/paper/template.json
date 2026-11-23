@@ -1,0 +1,20 @@
+{
+ "id": "paper",
+ "name": "Paper",
+ "description": "Quiet academic paper: serif text, centered abstract, justified body, numbered pages.",
+ "mood": [
+  "calm",
+  "scholarly"
+ ],
+ "best_for": [
+  "academic paper",
+  "thesis chapter",
+  "lecture notes",
+  "essay"
+ ],
+ "size": "A4",
+ "margin": "25mm 22mm 28mm 22mm",
+ "cover": "none",
+ "pagenumbers": true,
+ "style": "serif"
+}

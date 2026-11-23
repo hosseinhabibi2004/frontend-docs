@@ -1,0 +1,10 @@
+:root{ --numeric:oldstyle-nums proportional-nums; --accent:#7a1f2b; --tint:#f7f4ef; --rule:#d8d2c6; --size:10.5pt; --lh:1.55; --h1:19pt; --h2:13.5pt; --h3:11pt; }
+.doc{ text-align:justify; hyphens:auto; }
+.doc>h1:first-child{ text-align:center; font-weight:400; font-size:21pt; margin-bottom:.2em; letter-spacing:-.01em; }
+h2{ font-weight:700; border-bottom:.5pt solid var(--rule); padding-bottom:.2em; }
+h2::before{ counter-increment:sec; content:counter(sec, doc) "  "; color:var(--accent); font-family:var(--ui-font); font-size:.8em; }
+.doc{ counter-reset:sec; }
+.callout-abstract{ background:none; border:0; border-block:.5pt solid var(--ink); margin:1.2em 8mm; padding:.8em 0; font-size:9.6pt; }
+.callout-abstract .callout-title{ text-align:center; color:var(--ink); }
+blockquote{ font-style:italic; }
+th{ border-bottom-color:var(--ink); } table{ font-family:var(--ui-font); }

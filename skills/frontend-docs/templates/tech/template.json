@@ -1,0 +1,26 @@
+{
+ "id": "tech",
+ "name": "Tech Doc",
+ "description": "Technical documentation: sans text, large mono code blocks, admonitions, API-style headings.",
+ "mood": [
+  "precise",
+  "developer"
+ ],
+ "best_for": [
+  "API docs",
+  "README to PDF",
+  "runbook",
+  "engineering spec"
+ ],
+ "size": "A4",
+ "margin": "20mm 18mm 22mm 18mm",
+ "cover": "plain",
+ "pagenumbers": true,
+ "style": "sans",
+ "langFonts": {
+  "fa": {
+   "text": "Vazirmatn",
+   "title": "Vazirmatn"
+  }
+ }
+}

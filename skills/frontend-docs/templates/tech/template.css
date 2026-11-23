@@ -1,0 +1,14 @@
+:root{ --accent:#2457d6; --tint:#f3f5f9; --rule:#dde1ea; --size:9.8pt; --lh:1.55; --h1:20pt; --h2:14pt; --h3:11pt;
+  --text-font:var(--font-ui),var(--lang-sans),sans-serif; --title-font:var(--font-ui),var(--lang-sans),sans-serif; }
+.cover{ padding:28mm 18mm; display:flex; flex-direction:column; justify-content:center; border-inline-start:8mm solid var(--accent); height:100vh; }
+.cover-kicker{ font:600 9pt var(--font-mono-names),var(--lang-sans); color:var(--accent); margin-bottom:6mm; }
+.cover-title{ font:700 34pt/1.1 var(--title-font); margin:0 0 5mm; }
+.cover-subtitle{ font:400 14pt/1.4 var(--text-font); color:var(--muted); margin:0 0 20mm; }
+.cover-meta{ font:500 9.5pt var(--font-mono-names),var(--lang-sans); color:var(--muted); display:flex; gap:8mm; flex-wrap:wrap; }
+h1{ font-weight:700; } h2{ border-bottom:1px solid var(--rule); padding-bottom:.25em; }
+h3{ font-family:var(--font-mono-ui); font-size:10.5pt; color:var(--accent); }
+pre.code{ background:#0f1722; color:#e6edf6; border:0; font-size:8.4pt; }
+pre.code .hljs-comment{ color:#7f8ea3; } pre.code .hljs-keyword,pre.code .hljs-built_in{ color:#7cb7ff; }
+pre.code .hljs-string{ color:#8fe0a8; } pre.code .hljs-number{ color:#ffb273; } pre.code .hljs-title{ color:#d9a8ff; }
+pre.code .hljs-attr,pre.code .hljs-type,pre.code .hljs-variable{ color:#6fd6e6; }
+code.inline{ background:#e8ecf5; color:#1c2f6b; }

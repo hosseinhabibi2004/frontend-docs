@@ -1,0 +1,20 @@
+{
+ "id": "report",
+ "name": "Report",
+ "description": "Modern business report with a full-bleed accent cover, sans body and strong section rhythm.",
+ "mood": [
+  "confident",
+  "clean"
+ ],
+ "best_for": [
+  "business report",
+  "status update",
+  "annual review",
+  "proposal"
+ ],
+ "size": "A4",
+ "margin": "24mm 20mm 24mm 20mm",
+ "cover": "band",
+ "pagenumbers": true,
+ "style": "sans"
+}
