@@ -1,0 +1,756 @@
+[
+  {
+    "family": "Source Serif 4",
+    "id": "source-serif-4",
+    "category": "serif",
+    "scripts": [
+      "latin",
+      "cyrillic",
+      "greek"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Literata",
+    "id": "literata",
+    "category": "serif",
+    "scripts": [
+      "latin",
+      "cyrillic",
+      "greek"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Libre Caslon Text",
+    "id": "libre-caslon-text",
+    "category": "serif",
+    "scripts": [
+      "latin"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Fraunces",
+    "id": "fraunces",
+    "category": "display",
+    "scripts": [
+      "latin"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Playfair Display",
+    "id": "playfair-display",
+    "category": "display",
+    "scripts": [
+      "latin",
+      "cyrillic"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Cormorant Garamond",
+    "id": "cormorant-garamond",
+    "category": "display",
+    "scripts": [
+      "latin",
+      "cyrillic"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Gloock",
+    "id": "gloock",
+    "category": "display",
+    "scripts": [
+      "latin"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Archivo Black",
+    "id": "archivo-black",
+    "category": "display",
+    "scripts": [
+      "latin"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Bricolage Grotesque",
+    "id": "bricolage-grotesque",
+    "category": "sans",
+    "scripts": [
+      "latin"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Schibsted Grotesk",
+    "id": "schibsted-grotesk",
+    "category": "sans",
+    "scripts": [
+      "latin"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "IBM Plex Sans",
+    "id": "ibm-plex-sans",
+    "category": "sans",
+    "scripts": [
+      "latin",
+      "cyrillic",
+      "greek"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Poppins",
+    "id": "poppins",
+    "category": "sans",
+    "scripts": [
+      "latin"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Inter",
+    "id": "inter",
+    "category": "sans",
+    "scripts": [
+      "latin",
+      "cyrillic",
+      "greek"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Carlito",
+    "id": "carlito",
+    "category": "sans",
+    "scripts": [
+      "latin",
+      "cyrillic",
+      "greek"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Barlow Condensed",
+    "id": "barlow-condensed",
+    "category": "sans",
+    "scripts": [
+      "latin"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Caveat",
+    "id": "caveat",
+    "category": "hand",
+    "scripts": [
+      "latin",
+      "cyrillic"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "JetBrains Mono",
+    "id": "jetbrains-mono",
+    "category": "mono",
+    "scripts": [
+      "latin",
+      "cyrillic",
+      "greek"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "IBM Plex Mono",
+    "id": "ibm-plex-mono",
+    "category": "mono",
+    "scripts": [
+      "latin",
+      "cyrillic"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "DM Mono",
+    "id": "dm-mono",
+    "category": "mono",
+    "scripts": [
+      "latin"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Vazirmatn",
+    "id": "vazirmatn",
+    "category": "sans",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "sizeAdjust": 100
+  },
+  {
+    "family": "Estedad",
+    "id": "estedad",
+    "category": "sans",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "sizeAdjust": 100
+  },
+  {
+    "family": "Sahel",
+    "id": "sahel-font",
+    "category": "sans",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "source": "https://github.com/rastikerdar/sahel-font"
+  },
+  {
+    "family": "Shabnam",
+    "id": "shabnam-font",
+    "category": "sans",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "source": "https://github.com/rastikerdar/shabnam-font"
+  },
+  {
+    "family": "Samim",
+    "id": "samim-font",
+    "category": "sans",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "source": "https://github.com/rastikerdar/samim-font"
+  },
+  {
+    "family": "Parastoo",
+    "id": "parastoo-font",
+    "category": "serif",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "source": "https://github.com/rastikerdar/parastoo-font",
+    "sizeAdjust": 114
+  },
+  {
+    "family": "Gandom",
+    "id": "gandom-font",
+    "category": "serif",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "source": "https://github.com/rastikerdar/gandom-font",
+    "sizeAdjust": 114
+  },
+  {
+    "family": "Tanha",
+    "id": "tanha-font",
+    "category": "hand",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "Public-Domain",
+    "source": "https://github.com/rastikerdar/tanha-font"
+  },
+  {
+    "family": "Mirza",
+    "id": "mirza",
+    "category": "serif",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "sizeAdjust": 118
+  },
+  {
+    "family": "Markazi Text",
+    "id": "markazi-text",
+    "category": "serif",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "sizeAdjust": 118
+  },
+  {
+    "family": "Noto Naskh Arabic",
+    "id": "noto-naskh-arabic",
+    "category": "serif",
+    "scripts": [
+      "arabic",
+      "persian",
+      "urdu"
+    ],
+    "license": "OFL-1.1",
+    "sizeAdjust": 112
+  },
+  {
+    "family": "Amiri",
+    "id": "amiri",
+    "category": "serif",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "sizeAdjust": 110
+  },
+  {
+    "family": "Lateef",
+    "id": "lateef",
+    "category": "serif",
+    "scripts": [
+      "arabic",
+      "persian",
+      "urdu"
+    ],
+    "license": "OFL-1.1",
+    "sizeAdjust": 126
+  },
+  {
+    "family": "Scheherazade New",
+    "id": "scheherazade-new",
+    "category": "serif",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "sizeAdjust": 112
+  },
+  {
+    "family": "Noto Sans Arabic",
+    "id": "noto-sans-arabic",
+    "category": "sans",
+    "scripts": [
+      "arabic",
+      "persian",
+      "urdu"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "IBM Plex Sans Arabic",
+    "id": "ibm-plex-sans-arabic",
+    "category": "sans",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Cairo",
+    "id": "cairo",
+    "category": "sans",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Readex Pro",
+    "id": "readex-pro",
+    "category": "sans",
+    "scripts": [
+      "arabic"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Almarai",
+    "id": "almarai",
+    "category": "sans",
+    "scripts": [
+      "arabic"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "El Messiri",
+    "id": "el-messiri",
+    "category": "display",
+    "scripts": [
+      "arabic"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Kufi Arabic",
+    "id": "noto-kufi-arabic",
+    "category": "kufi",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Reem Kufi",
+    "id": "reem-kufi",
+    "category": "kufi",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Lalezar",
+    "id": "lalezar",
+    "category": "display",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Rakkas",
+    "id": "rakkas",
+    "category": "display",
+    "scripts": [
+      "arabic"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Katibeh",
+    "id": "katibeh",
+    "category": "display",
+    "scripts": [
+      "arabic",
+      "persian"
+    ],
+    "license": "OFL-1.1",
+    "sizeAdjust": 118
+  },
+  {
+    "family": "Noto Nastaliq Urdu",
+    "id": "noto-nastaliq-urdu",
+    "category": "nastaliq",
+    "scripts": [
+      "arabic",
+      "urdu",
+      "persian"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Gulzar",
+    "id": "gulzar",
+    "category": "nastaliq",
+    "scripts": [
+      "arabic",
+      "urdu",
+      "persian"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Frank Ruhl Libre",
+    "id": "frank-ruhl-libre",
+    "category": "serif",
+    "scripts": [
+      "hebrew"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "David Libre",
+    "id": "david-libre",
+    "category": "serif",
+    "scripts": [
+      "hebrew"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Serif Hebrew",
+    "id": "noto-serif-hebrew",
+    "category": "serif",
+    "scripts": [
+      "hebrew"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Hebrew",
+    "id": "noto-sans-hebrew",
+    "category": "sans",
+    "scripts": [
+      "hebrew"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Heebo",
+    "id": "heebo",
+    "category": "sans",
+    "scripts": [
+      "hebrew"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Assistant",
+    "id": "assistant",
+    "category": "sans",
+    "scripts": [
+      "hebrew"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Suez One",
+    "id": "suez-one",
+    "category": "display",
+    "scripts": [
+      "hebrew"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Secular One",
+    "id": "secular-one",
+    "category": "display",
+    "scripts": [
+      "hebrew"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Serif Devanagari",
+    "id": "noto-serif-devanagari",
+    "category": "serif",
+    "scripts": [
+      "devanagari"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Devanagari",
+    "id": "noto-sans-devanagari",
+    "category": "sans",
+    "scripts": [
+      "devanagari"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Tiro Devanagari Hindi",
+    "id": "tiro-devanagari-hindi",
+    "category": "serif",
+    "scripts": [
+      "devanagari"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Hind",
+    "id": "hind",
+    "category": "sans",
+    "scripts": [
+      "devanagari"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Eczar",
+    "id": "eczar",
+    "category": "display",
+    "scripts": [
+      "devanagari"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Bengali",
+    "id": "noto-sans-bengali",
+    "category": "sans",
+    "scripts": [
+      "bengali"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Serif Bengali",
+    "id": "noto-serif-bengali",
+    "category": "serif",
+    "scripts": [
+      "bengali"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Tamil",
+    "id": "noto-sans-tamil",
+    "category": "sans",
+    "scripts": [
+      "tamil"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Serif Tamil",
+    "id": "noto-serif-tamil",
+    "category": "serif",
+    "scripts": [
+      "tamil"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Telugu",
+    "id": "noto-sans-telugu",
+    "category": "sans",
+    "scripts": [
+      "telugu"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Serif Telugu",
+    "id": "noto-serif-telugu",
+    "category": "serif",
+    "scripts": [
+      "telugu"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Gujarati",
+    "id": "noto-sans-gujarati",
+    "category": "sans",
+    "scripts": [
+      "gujarati"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Serif Gujarati",
+    "id": "noto-serif-gujarati",
+    "category": "serif",
+    "scripts": [
+      "gujarati"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Gurmukhi",
+    "id": "noto-sans-gurmukhi",
+    "category": "sans",
+    "scripts": [
+      "gurmukhi"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Kannada",
+    "id": "noto-sans-kannada",
+    "category": "sans",
+    "scripts": [
+      "kannada"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Malayalam",
+    "id": "noto-sans-malayalam",
+    "category": "sans",
+    "scripts": [
+      "malayalam"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Thai",
+    "id": "noto-sans-thai",
+    "category": "sans",
+    "scripts": [
+      "thai"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Serif Thai",
+    "id": "noto-serif-thai",
+    "category": "serif",
+    "scripts": [
+      "thai"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Georgian",
+    "id": "noto-sans-georgian",
+    "category": "sans",
+    "scripts": [
+      "georgian"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Serif Georgian",
+    "id": "noto-serif-georgian",
+    "category": "serif",
+    "scripts": [
+      "georgian"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Sans Armenian",
+    "id": "noto-sans-armenian",
+    "category": "sans",
+    "scripts": [
+      "armenian"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "Noto Serif Armenian",
+    "id": "noto-serif-armenian",
+    "category": "serif",
+    "scripts": [
+      "armenian"
+    ],
+    "license": "OFL-1.1"
+  },
+  {
+    "family": "KaTeX_*",
+    "role": "math",
+    "scripts": [
+      "latin",
+      "math"
+    ],
+    "license": "MIT/OFL"
+  }
+]
