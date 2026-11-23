@@ -1,0 +1,21 @@
+{
+ "id": "newsletter",
+ "name": "Newsletter",
+ "description": "Magazine-style newsletter: masthead with rules, two-column body, bold section heads and boxed callouts.",
+ "mood": [
+  "editorial",
+  "lively"
+ ],
+ "best_for": [
+  "newsletter",
+  "magazine",
+  "bulletin",
+  "company update"
+ ],
+ "size": "A4",
+ "margin": "16mm 16mm 18mm 16mm",
+ "cover": "inline",
+ "pagenumbers": true,
+ "style": "serif",
+ "display": "loud"
+}

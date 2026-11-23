@@ -1,0 +1,32 @@
+{
+ "id": "business-plan",
+ "name": "Business Plan",
+ "description": "Bound venture-book look: graph-paper cover with a pine spine, full-bleed chapter bands with real chapter numbers, ledger-style financial tables.",
+ "mood": [
+  "serious",
+  "structured"
+ ],
+ "best_for": [
+  "business plan",
+  "investor memo",
+  "feasibility study",
+  "grant narrative"
+ ],
+ "size": "A4",
+ "margin": "24mm 20mm 24mm 20mm",
+ "cover": "plain",
+ "pagenumbers": true,
+ "style": "serif",
+ "langFonts": {
+  "fa": {
+   "text": "Gandom",
+   "title": "Estedad"
+  },
+  "ar": {
+   "title": "Cairo"
+  },
+  "he": {
+   "title": "Heebo"
+  }
+ }
+}

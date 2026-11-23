@@ -1,0 +1,18 @@
+:root{ --ink:#17171f; --red:#b3261e; --muted:#6a6a76; --rule:#c9c9d2; --tint:#f0f1f6; --accent:#17171f; --size:10.2pt; --lh:1.52; --h1:17pt; --h2:10.6pt;
+  --text-font:'Libre Caslon Text',var(--lang-text),serif; --title-font:'Libre Caslon Text',var(--lang-display),serif; --font-ui:'IBM Plex Sans'; }
+.doc{ counter-reset:sec; padding-inline-start:15mm; text-align:justify; hyphens:auto; }
+body::before{ content:''; position:fixed; top:0; bottom:0; inset-inline-start:0; width:2.2mm; border-inline:.7pt solid var(--red); }
+.doc>h1:first-child{ text-align:center; text-transform:uppercase; letter-spacing:.14em; font-size:15pt; font-weight:700; margin:0 0 1.2em; padding-bottom:.7em; border-bottom:.5pt solid var(--ink); }
+:lang(fa) .doc>h1:first-child,:lang(ar) .doc>h1:first-child{ letter-spacing:0; text-transform:none; font-size:17pt; }
+h2{ counter-increment:sec; counter-reset:sub; font:700 10.6pt var(--ui-font); letter-spacing:.08em; text-transform:uppercase; margin:1.6em 0 .6em; position:relative; break-after:avoid; }
+:lang(fa) h2,:lang(ar) h2{ letter-spacing:0; text-transform:none; font-size:12pt; }
+h2::before{ content:counter(sec, doc) "."; position:absolute; inset-inline-start:-12.5mm; width:10mm; text-align:end; font-weight:700; color:var(--red); }
+.doc>h2~p{ counter-increment:sub; position:relative; margin:0 0 .55em; }
+.doc>h2~p::before{ content:counter(sec, doc) "." counter(sub, doc); position:absolute; inset-inline-start:-12.5mm; width:10mm; text-align:end; font:500 8pt/2.3 var(--font-mono-ui); color:var(--muted); }
+strong{ font-variant:small-caps; letter-spacing:.03em; font-weight:700; } :lang(fa) strong,:lang(ar) strong{ font-variant:normal; letter-spacing:0; }
+.parties{ display:flex; gap:10mm; margin:0 0 1.4em; } .parties>div{ flex:1; border-top:2pt solid var(--ink); padding-top:2mm; font-size:9.6pt; line-height:1.5; }
+.parties strong{ display:block; font:600 7.6pt var(--ui-font); letter-spacing:.14em; text-transform:uppercase; font-variant:normal; color:var(--red); margin-bottom:1mm; }
+:lang(fa) .parties strong,:lang(ar) .parties strong{ letter-spacing:0; text-transform:none; font-size:9pt; }
+.signatures{ display:flex; gap:14mm; margin-top:9mm; break-inside:avoid; } .signatures>div{ flex:1; border-top:.7pt solid var(--ink); padding-top:2mm; font-size:9.4pt; line-height:1.5; }
+.callout{ border-radius:0; background:var(--tint); border-inline-start:2pt solid var(--ink); font-size:9.6pt; }
+.callout-title{ color:var(--ink); }

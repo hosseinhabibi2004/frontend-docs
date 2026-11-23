@@ -1,0 +1,20 @@
+{
+ "id": "proposal",
+ "name": "Proposal",
+ "description": "Confident proposal: split-color cover with a vertical accent block, airy sans body, pull-out callouts.",
+ "mood": [
+  "bold",
+  "modern"
+ ],
+ "best_for": [
+  "project proposal",
+  "pitch document",
+  "grant application",
+  "RFP response"
+ ],
+ "size": "A4",
+ "margin": "24mm 20mm 24mm 20mm",
+ "cover": "split",
+ "pagenumbers": true,
+ "style": "sans"
+}

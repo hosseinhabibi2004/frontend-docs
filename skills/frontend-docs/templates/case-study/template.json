@@ -1,0 +1,20 @@
+{
+ "id": "case-study",
+ "name": "Case Study",
+ "description": "Client case study: pomegranate hero block with a heavy grotesque title, a pistachio Snapshot sidebar, and pull-quotes that break the column.",
+ "mood": [
+  "editorial",
+  "persuasive"
+ ],
+ "best_for": [
+  "case study",
+  "project write-up",
+  "client story",
+  "portfolio piece"
+ ],
+ "size": "A4",
+ "margin": "0 0 20mm 0",
+ "cover": "inline",
+ "pagenumbers": true,
+ "style": "sans"
+}

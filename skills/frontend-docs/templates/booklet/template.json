@@ -1,0 +1,26 @@
+{
+ "id": "booklet",
+ "name": "Booklet / Manual",
+ "description": "A5 user manual: big numbered steps, safety callouts, chapter bands and plenty of margin for binding.",
+ "mood": [
+  "approachable",
+  "practical"
+ ],
+ "best_for": [
+  "user manual",
+  "quick-start guide",
+  "instruction booklet",
+  "handbook"
+ ],
+ "size": "A5",
+ "margin": "16mm 14mm 18mm 14mm",
+ "cover": "band",
+ "pagenumbers": true,
+ "style": "sans",
+ "langFonts": {
+  "fa": {
+   "text": "Sahel",
+   "title": "Sahel"
+  }
+ }
+}

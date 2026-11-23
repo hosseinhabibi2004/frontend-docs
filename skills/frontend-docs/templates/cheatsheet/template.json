@@ -1,0 +1,27 @@
+{
+ "id": "cheatsheet",
+ "name": "Cheat Sheet",
+ "description": "Dense landscape reference card: 3 columns, tiny type, colored section heads, compact code and tables.",
+ "mood": [
+  "dense",
+  "utilitarian"
+ ],
+ "best_for": [
+  "cheat sheet",
+  "quick reference",
+  "formula sheet",
+  "cribs"
+ ],
+ "size": "A4",
+ "margin": "10mm 10mm 12mm 10mm",
+ "cover": "inline",
+ "pagenumbers": true,
+ "landscape": true,
+ "style": "sans",
+ "langFonts": {
+  "fa": {
+   "text": "Vazirmatn",
+   "title": "Vazirmatn"
+  }
+ }
+}

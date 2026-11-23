@@ -1,0 +1,25 @@
+{
+ "id": "whitepaper",
+ "name": "Whitepaper",
+ "description": "Dark-cover authority document: ink-navy cover with a gold rule, spacious serif body, pull-quote styling.",
+ "mood": [
+  "authoritative",
+  "premium"
+ ],
+ "best_for": [
+  "whitepaper",
+  "research brief",
+  "industry report",
+  "executive briefing"
+ ],
+ "size": "A4",
+ "margin": "26mm 24mm 26mm 24mm",
+ "cover": "dark",
+ "pagenumbers": true,
+ "style": "serif",
+ "langFonts": {
+  "fa": {
+   "title": "Markazi Text"
+  }
+ }
+}

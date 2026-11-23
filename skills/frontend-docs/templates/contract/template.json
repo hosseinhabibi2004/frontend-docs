@@ -1,0 +1,21 @@
+{
+ "id": "contract",
+ "name": "Contract",
+ "description": "Legal agreement: double red margin rule, clause numbers hanging in the gutter (1.1, 1.2), defined terms in small caps, initials boxes on every page.",
+ "mood": [
+  "formal",
+  "exacting"
+ ],
+ "best_for": [
+  "contract",
+  "NDA",
+  "service agreement",
+  "terms and conditions"
+ ],
+ "size": "A4",
+ "margin": "22mm 22mm 26mm 22mm",
+ "cover": "none",
+ "pagenumbers": true,
+ "initials": true,
+ "style": "serif"
+}
