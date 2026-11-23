@@ -1,0 +1,10 @@
+:root{ --accent:#e4572e; --tint:#fff3ee; --ink:#14110f; --paper:#fffaf5; --size:15pt; --lh:1.45;
+  --text-font:var(--font-ui),var(--lang-sans),sans-serif; --title-font:var(--font-title-latin),var(--lang-display),serif; }
+.doc>.page{ height:100vh; padding:0; display:flex; flex-direction:column; }
+.poster-top{ flex:1; min-height:0; background:var(--accent); color:#fff; padding:20mm 24mm 16mm; display:flex; flex-direction:column; justify-content:flex-end; }
+.poster-top h1{ font:700 88pt/.95 var(--title-font); letter-spacing:-.03em; margin:0 0 10mm; color:#fff; }
+:lang(fa) .poster-top h1,:lang(ar) .poster-top h1{ font-size:68pt; letter-spacing:0; line-height:1.15; }
+.poster-top p{ font:400 28pt/1.25 var(--text-font); margin:0; max-width:230mm; opacity:.95; }
+.poster-body{ padding:16mm 24mm; display:grid; grid-template-columns:repeat(3,1fr); gap:10mm; }
+.poster-body h2{ font:800 20pt var(--title-font); border-top:4px solid var(--ink); padding-top:3mm; margin:0 0 3mm; } .poster-body p{ font-size:14pt; margin:0; }
+.poster-foot{ background:var(--ink); color:#fff; padding:10mm 24mm; display:flex; justify-content:space-between; font:600 18pt var(--ui-font); }

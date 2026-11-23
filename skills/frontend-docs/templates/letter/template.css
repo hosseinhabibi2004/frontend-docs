@@ -1,0 +1,8 @@
+:root{ --accent:#1f2937; --tint:#f5f5f5; --rule:#d4d4d8; --size:10.8pt; --lh:1.6; --h1:15pt; --h2:12pt; --h3:11pt; }
+.doc{ position:relative; }
+.sender{ text-align:end; font:9.5pt/1.5 var(--ui-font); color:var(--muted); border-bottom:2px solid var(--accent); padding-bottom:5mm; margin-bottom:12mm; }
+.sender strong{ display:block; font:700 15pt var(--title-font); color:var(--ink); margin-bottom:1mm; }
+.recipient{ margin-bottom:8mm; } .date{ text-align:end; margin-bottom:8mm; color:var(--muted); }
+.subject{ font-weight:700; margin:6mm 0; padding-block:2mm; border-block:1px solid var(--rule); }
+.signature{ margin-top:18mm; } .signature .line{ display:block; width:55mm; border-top:1px solid var(--ink); margin-bottom:1mm; }
+p{ text-align:justify; } .doc>h1:first-child{ font-size:15pt; }

@@ -1,0 +1,11 @@
+:root{ --accent:#8b6b1f; --tint:#fbf8f0; --rule:#d9c690; --size:12pt; --lh:1.5; --paper:#fffdf7;
+  --text-font:var(--font-text-latin),var(--lang-text),serif; --title-font:'Playfair Display',var(--lang-display),serif; }
+.doc>.page{ height:100vh; padding:11mm; }
+.cert{ height:100%; border:2.2mm double var(--accent); padding:12mm 24mm; text-align:center; display:flex; flex-direction:column; justify-content:center; background:radial-gradient(circle at 50% 0,#fff 0,var(--paper) 70%); }
+.cert h1{ font:700 38pt/1.1 var(--title-font); color:var(--accent); letter-spacing:.06em; text-transform:uppercase; margin:0 0 3mm; }
+:lang(fa) .cert h1,:lang(ar) .cert h1{ letter-spacing:0; text-transform:none; font-size:42pt; }
+.cert h2{ font:400 12pt var(--ui-font); letter-spacing:.3em; text-transform:uppercase; color:var(--muted); margin:0 0 8mm; }
+:lang(fa) .cert h2,:lang(ar) .cert h2{ letter-spacing:0; text-transform:none; }
+.cert .name{ font:italic 400 34pt/1.2 var(--title-font); border-bottom:1px solid var(--accent); display:inline-block; padding:0 14mm 2mm; margin:3mm auto 6mm; }
+.cert p{ max-width:180mm; margin-inline:auto; text-align:center; }
+.cert .sign{ display:flex; justify-content:space-around; margin-top:16mm; font:10pt var(--ui-font); } .cert .sign span{ border-top:1px solid var(--ink); padding-top:2mm; min-width:55mm; }

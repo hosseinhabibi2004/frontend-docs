@@ -1,0 +1,21 @@
+{
+ "id": "poster",
+ "name": "Poster",
+ "description": "A3 poster: oversized headline on a solid color field, one-line takeaways and a footer strip for details.",
+ "mood": [
+  "loud",
+  "creative"
+ ],
+ "best_for": [
+  "poster",
+  "event flyer",
+  "announcement",
+  "conference poster"
+ ],
+ "size": "A3",
+ "margin": "0",
+ "cover": "none",
+ "pagenumbers": false,
+ "style": "sans",
+ "display": "loud"
+}

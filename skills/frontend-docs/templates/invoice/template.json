@@ -1,0 +1,26 @@
+{
+ "id": "invoice",
+ "name": "Invoice",
+ "description": "Clean invoice: header with number and dates, itemized table with right-aligned amounts, bold total.",
+ "mood": [
+  "precise",
+  "neutral"
+ ],
+ "best_for": [
+  "invoice",
+  "quote",
+  "receipt",
+  "statement"
+ ],
+ "size": "A4",
+ "margin": "20mm 20mm 20mm 20mm",
+ "cover": "none",
+ "pagenumbers": false,
+ "style": "sans",
+ "langFonts": {
+  "fa": {
+   "text": "Samim",
+   "title": "Samim"
+  }
+ }
+}

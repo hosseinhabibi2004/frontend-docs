@@ -1,0 +1,22 @@
+{
+ "id": "certificate",
+ "name": "Certificate",
+ "description": "Landscape A4 certificate with a double ornamental border, centered display type and signature lines.",
+ "mood": [
+  "ceremonial",
+  "elegant"
+ ],
+ "best_for": [
+  "certificate",
+  "award",
+  "diploma",
+  "recognition"
+ ],
+ "size": "A4",
+ "margin": "0",
+ "cover": "none",
+ "pagenumbers": false,
+ "landscape": true,
+ "style": "serif",
+ "display": "elegant"
+}

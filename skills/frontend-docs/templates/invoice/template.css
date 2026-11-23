@@ -1,0 +1,10 @@
+:root{ --accent:#16a34a; --tint:#f3f8f4; --rule:#d9e4dc; --size:10pt; --lh:1.5; --h1:26pt; --h2:10pt; --h3:10pt;
+  --text-font:var(--font-ui),var(--lang-sans),sans-serif; --title-font:var(--font-ui),var(--lang-sans),sans-serif; }
+.doc>h1:first-child{ font-size:30pt; letter-spacing:-.02em; margin:0 0 .3em; display:flex; justify-content:space-between; border-bottom:3px solid var(--accent); padding-bottom:.2em; }
+.meta{ display:flex; gap:14mm; margin-bottom:8mm; } .meta>div{ flex:1; font-size:9.5pt; } .meta strong{ display:block; font:700 8pt var(--ui-font); letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin-bottom:1mm; }
+:lang(fa) .meta strong,:lang(ar) .meta strong{ letter-spacing:0; text-transform:none; font-size:9pt; }
+table{ font-size:10pt; } thead th{ background:var(--ink); color:#fff; border:0; padding:.6em .8em; }
+td:last-child,th:last-child{ text-align:end; font-variant-numeric:tabular-nums; }
+.total{ margin-inline-start:auto; width:75mm; margin-top:6mm; font:600 11pt var(--ui-font); } .total p{ display:flex; justify-content:space-between; border-bottom:1px solid var(--rule); padding:.3em 0; margin:0; }
+.total .grand{ font-size:15pt; border:0; background:var(--accent); color:#fff; padding:.45em .7em; margin-top:2mm; }
+.note{ margin-top:14mm; color:var(--muted); font-size:9pt; border-top:1px solid var(--rule); padding-top:3mm; }

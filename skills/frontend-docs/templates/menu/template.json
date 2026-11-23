@@ -1,0 +1,21 @@
+{
+ "id": "menu",
+ "name": "Menu",
+ "description": "A5 restaurant/cafe menu: Cormorant display type, dotted price leaders, two-column sections, warm paper tone.",
+ "mood": [
+  "warm",
+  "elegant"
+ ],
+ "best_for": [
+  "menu",
+  "price list",
+  "tasting card",
+  "program"
+ ],
+ "size": "A5",
+ "margin": "0",
+ "cover": "none",
+ "pagenumbers": false,
+ "style": "serif",
+ "display": "elegant"
+}

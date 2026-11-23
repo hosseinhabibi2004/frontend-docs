@@ -1,0 +1,22 @@
+{
+ "id": "brochure",
+ "name": "Brochure (tri-fold)",
+ "description": "Risograph-style tri-fold: two-ink overprint circles, halftone dots, fold ticks, Archivo Black headlines. Two A4 landscape sides (outside / inside).",
+ "mood": [
+  "playful",
+  "printed"
+ ],
+ "best_for": [
+  "brochure",
+  "tri-fold flyer",
+  "program leaflet",
+  "service overview"
+ ],
+ "size": "A4",
+ "margin": "0",
+ "cover": "none",
+ "pagenumbers": false,
+ "landscape": true,
+ "style": "sans",
+ "display": "loud"
+}

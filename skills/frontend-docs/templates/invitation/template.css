@@ -1,0 +1,16 @@
+:root{ --cobalt:#1d46d6; --sun:#f6c437; --leaf:#2a8a57; --blush:#f4a6c0; --ink:#14142b; --paper:#fffefb; --accent:#1d46d6; --size:10.5pt; --lh:1.5;
+  --text-font:var(--font-ui),var(--lang-sans),sans-serif; --title-font:'Gloock',var(--lang-display),serif; }
+.doc>.page{ height:100vh; padding:0; background:var(--paper); position:relative; overflow:hidden; }
+.art{ position:absolute; inset:0; overflow:clip; z-index:0; }
+.art::before{ content:''; position:absolute; width:124mm; height:112mm; background:var(--cobalt); top:-22mm; inset-inline-start:-30mm; border-radius:48% 52% 46% 54% / 56% 44% 56% 44%; }
+.art::after{ content:''; position:absolute; width:62mm; height:62mm; background:var(--sun); top:34mm; inset-inline-end:-16mm; border-radius:50%; mix-blend-mode:multiply; }
+.sprig{ position:absolute; width:26mm; height:60mm; background:var(--leaf); border-radius:100% 0 100% 0; transform:rotate(18deg); bottom:-8mm; inset-inline-end:10mm; }
+.sprig.two{ width:20mm; height:46mm; inset-inline-end:28mm; bottom:-12mm; background:var(--blush); transform:rotate(-24deg); border-radius:0 100% 0 100%; }
+.page h1{ position:relative; z-index:2; font:400 40pt/1 var(--title-font); color:#fff; margin:30mm 14mm 0; letter-spacing:-.01em; max-width:84mm; }
+:lang(fa) .page h1,:lang(ar) .page h1{  font-weight:var(--lang-title-wt); line-height:1.25; font-size:36pt; }
+.page h1+p{ position:relative; z-index:2; margin:6mm 14mm 0; color:#fff; font-size:11pt; max-width:66mm; }
+.details{ position:absolute; z-index:2; inset-inline-start:14mm; inset-inline-end:48mm; bottom:34mm; display:grid; grid-template-columns:auto 1fr; gap:2.4mm 6mm; font-size:10.5pt; }
+.details dt,.details span.k{ font:500 8pt var(--font-mono-ui); letter-spacing:.1em; text-transform:uppercase; color:var(--cobalt); padding-top:.5mm; }
+:lang(fa) .details span.k,:lang(ar) .details span.k{ letter-spacing:0; text-transform:none; font-family:var(--ui-font); font-size:9pt; }
+.details b{ font-weight:600; }
+.rsvp{ position:absolute; z-index:2; inset-inline-start:14mm; inset-inline-end:48mm; bottom:14mm; font-size:9pt; color:var(--ink); }

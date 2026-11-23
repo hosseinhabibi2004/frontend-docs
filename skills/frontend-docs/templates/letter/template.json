@@ -1,0 +1,20 @@
+{
+ "id": "letter",
+ "name": "Letter",
+ "description": "Formal business letter: sender block, recipient, subject line and signature space, on a quiet letterhead.",
+ "mood": [
+  "formal",
+  "personal"
+ ],
+ "best_for": [
+  "business letter",
+  "cover letter",
+  "notice",
+  "official correspondence"
+ ],
+ "size": "A4",
+ "margin": "26mm 24mm 24mm 24mm",
+ "cover": "none",
+ "pagenumbers": false,
+ "style": "serif"
+}

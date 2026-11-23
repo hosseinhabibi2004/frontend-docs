@@ -1,0 +1,22 @@
+:root{ --blue:#2a47ff; --pink:#ff4f8b; --ink:#151432; --paper:#fbfbfe; --muted:#55557a; --accent:#2a47ff; --size:10pt; --lh:1.5;
+  --text-font:var(--font-ui),var(--lang-sans),sans-serif; --title-font:'Archivo Black',var(--lang-sans),sans-serif; }
+body{ font-weight:500; }
+.doc>.page{ height:100vh; padding:0; background:var(--paper); position:relative; }
+.panels{ display:grid; grid-template-columns:repeat(3,1fr); height:100%; }
+.panel{ position:relative; padding:13mm 10mm 12mm; overflow:hidden; display:flex; flex-direction:column; }
+.panel+.panel::before{ content:''; position:absolute; inset-inline-start:0; top:0; height:4mm; border-inline-start:.5pt solid var(--ink); }
+.panel+.panel::after{ content:''; position:absolute; inset-inline-start:0; bottom:0; height:4mm; border-inline-start:.5pt solid var(--ink); }
+.panel h1,.panel h2{ font-family:var(--title-font); font-weight:400; line-height:.98; color:var(--ink); margin:0 0 4mm; letter-spacing:-.01em; }
+.panel h1{ font-size:30pt; } .panel h2{ font-size:21pt; } .panel h3{ font:700 8.5pt var(--ui-font); letter-spacing:.12em; text-transform:uppercase; color:var(--blue); margin:5mm 0 1.5mm; }
+:lang(fa) .panel h1,:lang(fa) .panel h2,:lang(ar) .panel h1,:lang(ar) .panel h2{  font-weight:var(--lang-title-wt); line-height:1.2; } :lang(fa) .panel h3,:lang(ar) .panel h3{ letter-spacing:0; text-transform:none; font-size:10pt; }
+.panel p{ margin:0 0 3mm; font-size:11.4pt; } .panel ul{ margin:0 0 3mm; padding-inline-start:1.1em; }
+.panel.cover-panel{ background:var(--paper); }
+.panel.cover-panel::before{ display:none; }
+.dot{ position:absolute; border-radius:50%; mix-blend-mode:multiply; }
+.dot.b{ background:var(--blue); width:92mm; height:92mm; top:-22mm; inset-inline-end:-30mm; }
+.dot.p{ background:var(--pink); width:70mm; height:70mm; top:26mm; inset-inline-end:14mm; }
+.dot.h{ width:56mm; height:56mm; top:-6mm; inset-inline-start:-6mm; background:radial-gradient(circle,var(--blue) 0 .55mm,transparent .62mm) 0 0/2.6mm 2.6mm; mix-blend-mode:normal; border-radius:0; }
+.panel.tint{ background:var(--blue); color:#fff; } .panel.tint h2,.panel.tint h3{ color:#fff; } .panel.tint h3{ opacity:.8; }
+.panel.pinkpanel{ background:var(--pink); } .panel.pinkpanel h2{ color:var(--ink); }
+.panel .push{ margin-top:auto; } .panel .big{ font:400 15pt/1.2 var(--title-font); }
+:lang(fa) .panel .big,:lang(ar) .panel .big{  font-weight:var(--lang-title-wt); }

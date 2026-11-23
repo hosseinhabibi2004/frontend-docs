@@ -1,0 +1,21 @@
+{
+ "id": "invitation",
+ "name": "Invitation",
+ "description": "A5 invitation as a cut-paper collage: ultramarine, sun and leaf shapes behind a Gloock headline; details set small and exact.",
+ "mood": [
+  "festive",
+  "handmade"
+ ],
+ "best_for": [
+  "invitation",
+  "event card",
+  "wedding card",
+  "announcement"
+ ],
+ "size": "A5",
+ "margin": "0",
+ "cover": "none",
+ "pagenumbers": false,
+ "style": "sans",
+ "display": "loud"
+}

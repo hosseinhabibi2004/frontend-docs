@@ -1,0 +1,22 @@
+{
+ "id": "planner",
+ "name": "Planner",
+ "description": "Monthly planner on a bullet-journal dot grid: handwritten month heading, tall calendar cells with weekend tints, habit tracker bubbles.",
+ "mood": [
+  "organized",
+  "personal"
+ ],
+ "best_for": [
+  "monthly planner",
+  "weekly planner",
+  "habit tracker",
+  "schedule"
+ ],
+ "size": "A4",
+ "margin": "10mm 12mm 10mm 12mm",
+ "cover": "none",
+ "pagenumbers": false,
+ "landscape": true,
+ "style": "sans",
+ "display": "hand"
+}
