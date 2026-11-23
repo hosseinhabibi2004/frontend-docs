@@ -1,0 +1,30 @@
+{
+  "name": "frontend-docs",
+  "description": "Create beautiful, print-ready PDF documents from a chat, notes or a topic, using a coding agent's frontend skills.",
+  "owner": {
+    "name": "Hossein Habibi",
+    "url": "https://github.com/hosseinhabibi2004"
+  },
+  "plugins": [
+    {
+      "name": "frontend-docs",
+      "description": "Make a PDF from a chat, notes, a topic or a file: 31 templates, LaTeX math, code, 77 bundled open fonts, true RTL layout.",
+      "source": "./",
+      "category": "productivity",
+      "tags": [
+        "claude-code",
+        "claude-skill",
+        "agent-skill",
+        "pdf",
+        "pdf-generator",
+        "document-generator",
+        "markdown-to-pdf",
+        "templates",
+        "resume",
+        "report",
+        "latex",
+        "katex"
+      ]
+    }
+  ]
+}
